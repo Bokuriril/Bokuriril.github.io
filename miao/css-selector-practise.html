@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style type="text/css">
-  body >p:first-child {
+  body > p:first-child {
     color: red;
   }
   [tabindex="-1"]:focus{
@@ -20,9 +20,15 @@
   body > .a.c > span{
     color: red;
   }
+  /* body.a.c span > span:first-child{
+    
+  } */
   body > .a.c > span > span{
     color: green;
   }
+  /* body.a.c span > span:last-child{
+    
+  } */
   body > .a.c > span > span + span{
     color: blue;
   }
@@ -35,6 +41,7 @@
   div a[href^="mailto" i]{
     color: blue;
   }
+  
   div a[href^="tel:"] {
     color: yellow;
   }
